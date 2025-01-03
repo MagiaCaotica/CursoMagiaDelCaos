@@ -15,9 +15,6 @@
             text-align: center;
         }
         .section {
-            display: none;
-        }
-        .active {
             display: block;
         }
         iframe {
@@ -34,27 +31,6 @@
             margin: 10px auto;
         }
     </style>
-    <script>
-        let currentStep = 0;
-        const steps = document.querySelectorAll('.section');
-
-        function showStep(index) {
-            steps.forEach((step, i) => {
-                step.classList.toggle('active', i === index);
-            });
-        }
-
-        function nextStep() {
-            if (currentStep < steps.length - 1) {
-                currentStep++;
-                showStep(currentStep);
-            }
-        }
-
-        document.addEventListener('DOMContentLoaded', () => {
-            showStep(currentStep);
-        });
-    </script>
 </head>
 <body>
     <img src="caosfera.png" alt="Caosfera" class="header-image">
@@ -109,7 +85,6 @@
                     style='width:300px; height:250px;'></iframe>
             <img src="candle.gif" alt="Vela derecha del bloque publicitario" class="candle" style="float: right;">
         </div>
-        <button onclick="nextStep()">Siguiente</button>
     </div>
 
     <div class="section">
@@ -148,7 +123,6 @@
                     style='width:300px; height:250px;'></iframe>
             <img src="candle.gif" alt="Vela derecha del bloque publicitario" class="candle" style="float: right;">
         </div>
-        <button onclick="nextStep()">Siguiente</button>
     </div>
 
     <div class="section">
@@ -176,7 +150,14 @@
                     style='width:300px; height:250px;'></iframe>
             <img src="candle.gif" alt="Vela derecha del bloque publicitario" class="candle" style="float: right;">
         </div>
-        <button onclick="nextStep()">Siguiente</button>
     </div>
+
+    <img src="candle.gif" alt="Vela" class="candle-image">
+    <h2>CUARTO PASO: ACTUALIZACIÓN DE CONOCIMIENTOS</h2>
+    <p>🌟 Regresa a nuestra página y canal para más información y actualizaciones de magia del caos. 🌟</p>
+
+    <footer>
+        <img src="candle.gif" alt="Vela" class="footer-image">
+    </footer>
 </body>
 </html>
