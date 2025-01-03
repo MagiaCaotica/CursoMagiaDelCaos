@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso básico de magia del caos</title>
+    <style>
+        body {
+            background-color: black;
+            color: gold;
+            font-family: 'Papyrus', fantasy; /* Fuente esotérica */
+        }
+        h1 {
+            color: purple;
+            text-align: center;
+        }
+        .section {
+            display: none;
+        }
+        .active {
+            display: block;
+        }
+        iframe {
+            display: block;
+            margin: 0 auto;
+        }
+        .header-image, .footer-image {
+            display: block;
+            margin: 0 auto;
+        }
+        .candle-image {
+            width: 50px;
+            display: block;
+            margin: 10px auto;
+        }
+    </style>
+    <script>
+        let currentStep = 0;
+        const steps = document.querySelectorAll('.section');
+
+        function showStep(index) {
+            steps.forEach((step, i) => {
+                step.classList.toggle('active', i === index);
+            });
+        }
+
+        function nextStep() {
+            if (currentStep < steps.length - 1) {
+                currentStep++;
+                showStep(currentStep);
+            }
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            showStep(currentStep);
+        });
+    </script>
+</head>
+<body>
+    <img src="caosfera.png" alt="Caosfera" class="header-image">
+    <h1>Curso básico de magia del caos</h1>
+    <p>Este curso es un viaje iniciático en el arte de la magia del caos, creado por y para el grupo de magos del caos de magia caótica. "In principio erat verbum" - En el principio era la palabra.</p>
+    <img src="candle.gif" alt="Vela" class="candle-image">
+
+    <div class="section">
+        <h2>PRIMER PASO: CONCEPTOS BÁSICOS</h2>
+        <p>🔮 🧙‍♂️ APRENDE Como TRANSFORMARTE en un MAGO del CAOS 🧙🏻‍♀️🦉</p>
+        <iframe src="https://www.youtube.com/embed/MPdoPoZowBY?si=migAst6QJW3gNJ1N" allowfullscreen></iframe>
+        <p>Términos básicos en la magia del caos</p>
+        <iframe src="https://www.youtube.com/embed/vRgk0US6RaM?si=n2J0l29KBc3NwaOW" allowfullscreen></iframe>
+        <p>PODCAST CAÓTICO EP XXXI: Como convertirte en un MAGO del CAOS: una guía Práctica!</p>
+        <iframe src="https://www.youtube.com/embed/3WbXP_hTtf8?si=-4N9rgWwm3KIc16x" allowfullscreen></iframe>
+        <p>PODCAST CAOTICO EP XVII:🔮 ¡Secretos de la Historia de la Magia, la hechicería y el ocultismo! 🔮</p>
+        <iframe src="https://www.youtube.com/embed/oXSrbru_ZmQ?si=CqB_HWj1kV2HEnxu" allowfullscreen></iframe>
+        <button onclick="nextStep()">Siguiente</button>
+    </div>
+
+    <div class="section">
+        <h2>SEGUNDO PASO: TECNICAS DE LA MAGIA DEL CAOS</h2>
+        <p>PODCAST CAOTICO EP I: 🔮 SERVIDORES MÁGICOS! Descubre el Secreto Oculto de la MAGIA DEL CAOS 🌀</p>
+        <iframe src="https://www.youtube.com/embed/0nop9d2SNxw?si=E8lo3FkohGITKCxt" allowfullscreen></iframe>
+        <p>PODCAST CAOTICO EP XXII:👾 FAQ: 20 Preguntas Sobre SERVIDORES MÁGICOS en la MAGIA DEL CAOS 👥</p>
+        <iframe src="https://www.youtube.com/embed/NS5idv783r8?si=eB-tlxuOW2vr2NdU" allowfullscreen></iframe>
+        <p>PODCAST CAÓTICO EP VIII: El SECRETO OCULTO de los SERVIDORES MÁGICOS y los EGREGORES 🧙‍♂️💥</p>
+        <iframe src="https://www.youtube.com/embed/ZV35Y7C7ufc?si=3Oiso2kHOop3wsu9" allowfullscreen></iframe>
+        <p>𖤍 Que son los SIGILOS, para que sirven y como puedo crearlos con MAGIA del CAOS 𖤍</p>
+        <iframe src="https://www.youtube.com/embed/2nINXI8JmIA?si=7WgRr0iWeVNsn7UJ" allowfullscreen></iframe>
+        <button onclick="nextStep()">Siguiente</button>
+    </div>
+
+    <div class="section">
+        <h2>TERCER PASO: TECNICAS AVANZADAS DE LA MAGIA DEL CAOS</h2>
+        <p>PODCAST CAOTICO EP XVIII:🔮como Protegerte de la Brujería y la Magia Negra con Magia del Caos! 🧙‍♀️</p>
+        <iframe src="https://www.youtube.com/embed/WdR0P8Tw6G4?si=qDh5otzKEySu3bt7" allowfullscreen></iframe>
+        <p>PODCAST CAOTICO EP XXXIV: 🤑 Como hacer Pacto con MAMMON para Obtener Riqueza y Opulencia Extrema 💰</p>
+        <iframe src="https://www.youtube.com/embed/ADV-TWa1swg?si=mt1pxYKqfzuG0Nty" allowfullscreen></iframe>
+        <p>GRIMORIO DEL LIBER TURING: Cómo Transformarte en un DEUX EX MACHINA</p>
+        <iframe src="https://www.youtube.com/embed/bcFbzInKptQ?si=51oSZq2pkFPyG3P6" allowfullscreen></iframe>
+        <button onclick="nextStep()">Finalizar</button>
+    </div>
+
+    <img src="goetia.png" alt="Goetia" class="footer-image">
+    <img src="clauneck.png" alt="Clauneck" class="footer-image">
+</body>
+</html>
